@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bot:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile.bot
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+
+  app:
+    build:
+      context: ./flask
+      dockerfile: Dockerfile.app
+    ports:
+      - "5000:5000"

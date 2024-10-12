@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результат обработки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0a32f;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .result-box {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 60%;
+        }
+        .result-box img {
+            max-width: 100%;
+            height: auto;
+        }
+        .result-box a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0a32f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .result-box a:hover {
+            background-color: #e6951e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Обработанное изображение</h1>
+    <div class="result-box">
+        <img src="/uploads/{{ filename }}" alt="Обработанное изображение">
+        <br>
+        <a href="/download/{{ filename }}">Скачать изображение</a>
+    </div>
+</body>
+</html>

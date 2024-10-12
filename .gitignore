@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Env files
+.env
+
+# PyTorch model files
+*.pt
+
+# Log files
+*.log
+
+# Ignore virtual environments
+venv/
+env/
+
+# Flask output and upload directories
+flask/outputs/
+flask/uploads/

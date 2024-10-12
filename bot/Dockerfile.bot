@@ -1,0 +1,16 @@
+FROM python:3.12
+
+WORKDIR /app
+
+RUN apt-get update
+RUN apt-get install -y libgl1
+
+RUN pip install pip==24.2
+
+COPY requirements_bot.txt .
+
+RUN pip install --no-cache-dir -r requirements_bot.txt
+
+COPY . .
+
+CMD ["python", "bot.py"]

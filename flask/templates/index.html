@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Processor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0a32f;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .upload-box {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 60%;
+        }
+        .upload-box input {
+            padding: 10px;
+            margin: 10px;
+        }
+        .upload-box button {
+            padding: 10px 20px;
+            background-color: #f0a32f;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .upload-box button:hover {
+            background-color: #e6951e;
+        }
+    </style>
+</head>
+<body>
+    <h1>#LAPTOPS AI</h1>
+    <div class="upload-box">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <h2>Загрузите фото для анализа</h2>
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Загрузить</button>
+        </form>
+    </div>
+</body>
+</html>
